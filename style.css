@@ -1,0 +1,165 @@
+body {
+  background-color: hsl(0, 0%, 86%);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 550px;
+  height: 100%;
+  margin: 10rem auto;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 20px 20px 80px 20px;
+}
+
+input {
+  width: 90px;
+  height: 50px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+}
+input::-moz-placeholder {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+input::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+input:hover, input:focus {
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none !important;
+  border-color: hsl(259, 100%, 65%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-format {
+  color: hsl(0, 0%, 8%);
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 0.7rem;
+}
+
+.field {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+.field p {
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.field .error-day,
+.field .error-month,
+.field .error-year {
+  font-size: 10px;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+  text-transform: none;
+  font-weight: 300;
+  letter-spacing: normal;
+  visibility: hidden;
+}
+
+.line-button {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  position: relative;
+}
+.line-button hr {
+  border: none;
+  height: 1px;
+  width: 550px;
+  background-color: hsl(0, 0%, 86%);
+}
+.line-button .button {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.25rem;
+  right: 0rem;
+}
+.line-button .button:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.line-button .button:active {
+  background-color: hsl(0, 0%, 8%);
+}
+.line-button .button .icon {
+  width: 55px;
+  height: 40px;
+}
+
+.calculated-age p {
+  font-size: 75px;
+  line-height: 0.1;
+  font-weight: bold;
+  font-style: italic;
+}
+.calculated-age .dash {
+  color: hsl(259, 100%, 65%);
+  display: inline-block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 350px;
+  }
+  .field {
+    margin-bottom: 2rem;
+  }
+  .field p {
+    font-size: 12px;
+  }
+  input {
+    height: 50px;
+    width: 70px;
+  }
+  input::-moz-placeholder {
+    padding-left: 0.1rem;
+  }
+  input::placeholder {
+    padding-left: 0.1rem;
+  }
+  .line-button hr {
+    width: 350px;
+  }
+  .line-button .button {
+    width: 4rem;
+    height: 4rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .line-button .button .icon {
+    width: 40px;
+    height: 25px;
+  }
+  .calculated-age {
+    margin-top: 5.2rem;
+  }
+  .calculated-age p {
+    font-size: 55px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,163 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+body {
+    background-color: $background-color;
+    font-family: $general-font;
+}
+
+.container {
+    width: 550px;
+    height: 100%;
+    margin: 10rem auto;
+    padding: 1rem 2rem;
+    background-color: $container-background;
+    border-radius: $container-border-radius;
+}
+
+input {
+    @include input;
+
+    &::placeholder {
+        font-size: $placeholder-text-size;
+        font-weight: bold;
+        padding-left: 0.5rem;
+    }
+
+    &:hover,
+    &:focus {
+        @include pointer;
+        outline: none !important;
+        border-color: $purple-color;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-format {
+    color: $general-text-color;
+    font-size: $input-text-size;
+    font-weight: bold;
+    padding-left: 0.7rem;
+}
+
+.field {
+    display: inline-block;
+    @include text-fields;
+
+    p {
+        text-transform: uppercase;
+        color: $input-text-color;
+        font-size: $input-name-size;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+    }
+
+    .error-day,
+    .error-month,
+    .error-year {
+        @include empty;
+        visibility: hidden;
+    }
+}
+
+.line-button {
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+    position: relative;
+
+    hr {
+        border: none;
+        height: 1px;
+        width: 550px;
+        background-color: $background-color;
+    }
+
+    .button {
+        @include button;
+        position: absolute;
+        top: -2.25rem;
+        right: 0rem;
+
+        &:hover {
+            @include pointer;
+        }
+
+        &:active {
+            background-color: $general-text-color;
+        }
+
+        .icon {
+            width: 55px;
+            height: 40px;
+        }
+    }
+}
+
+.calculated-age {
+    p {
+        @include result-text;
+    }
+
+    .dash {
+        color: $purple-color;
+        display: inline-block;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: $attribution-color;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 350px;
+    }
+
+    .field {
+        margin-bottom: 2rem;
+
+        p {
+            font-size: $input-name-size-mob;
+        }
+    }
+    input {
+        height: 50px;
+        width: 70px;
+
+        &::placeholder {
+            padding-left: 0.1rem;
+        }
+    }
+
+    .line-button {
+        hr {
+            width: 350px;
+        }
+
+        .button {
+            @include button-mob;
+            right: 50%;
+            transform: translateX(50%);
+
+            .icon {
+                width: 40px;
+                height: 25px;
+            }
+        }
+    }
+
+    .calculated-age {
+        margin-top: 5.2rem;
+        p {
+            font-size: $result-text-size-mob;
+        }
+    }
+}

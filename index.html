@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+  </head>
+  <body>
+    <div class="age-calculator container">
+      <header>
+        <div class="day field">
+          <p class="invalid-day">Day</p>
+          <input id="day-number" class="number-format" type="number" placeholder="DD" value="" />
+          <p class="error-day">This field is required.</p>
+        </div>
+        <div class="month field">
+          <p class="invalid-month">Month</p>
+          <input id="month-number" class="number-format" type="number" placeholder="MM" value="" />
+          <p class="error-month">This field is required.</p>
+        </div>
+        <div class="year field">
+          <p class="invalid-year">Year</p>
+          <input id="year-number" class="number-format" type="number" placeholder="YYYY" value="" />
+          <p class="error-year">This field is required.</p>
+        </div>
+      </header>
+      <div class="line-button">
+      <hr />
+      <button class="button" onclick="buttonClicked()" type="button"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 46 44"><g fill="none" stroke="white" stroke-width="3"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+    </div>
+      <main>
+        <div class="calculated-age">
+        <p><span class="dashYears dash">--</span> years</p>
+        <p><span class="dashMonths dash">--</span> months</p> 
+        <p><span class="dashDays dash">--</span> days</p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Barbora Brhlova</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
