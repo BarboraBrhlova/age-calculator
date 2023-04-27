@@ -76,7 +76,7 @@ input::-webkit-inner-spin-button {
         background-color: $background-color;
     }
 
-    .button {
+    .calculateButton {
         @include button;
         position: absolute;
         top: -2.25rem;
@@ -142,7 +142,7 @@ input::-webkit-inner-spin-button {
             width: 350px;
         }
 
-        .button {
+        .calculateButton {
             @include button-mob;
             right: 50%;
             transform: translateX(50%);

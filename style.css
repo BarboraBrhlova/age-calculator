@@ -81,7 +81,7 @@ input::-webkit-inner-spin-button {
   width: 550px;
   background-color: hsl(0, 0%, 86%);
 }
-.line-button .button {
+.line-button .calculateButton {
   width: 4.5rem;
   height: 4.5rem;
   background-color: hsl(259, 100%, 65%);
@@ -91,14 +91,14 @@ input::-webkit-inner-spin-button {
   top: -2.25rem;
   right: 0rem;
 }
-.line-button .button:hover {
+.line-button .calculateButton:hover {
   cursor: pointer;
   transition: all 0.3s;
 }
-.line-button .button:active {
+.line-button .calculateButton:active {
   background-color: hsl(0, 0%, 8%);
 }
-.line-button .button .icon {
+.line-button .calculateButton .icon {
   width: 55px;
   height: 40px;
 }
@@ -146,13 +146,13 @@ input::-webkit-inner-spin-button {
   .line-button hr {
     width: 350px;
   }
-  .line-button .button {
+  .line-button .calculateButton {
     width: 4rem;
     height: 4rem;
     right: 50%;
     transform: translateX(50%);
   }
-  .line-button .button .icon {
+  .line-button .calculateButton .icon {
     width: 40px;
     height: 25px;
   }
